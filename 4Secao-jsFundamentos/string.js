@@ -16,6 +16,6 @@ console.log('Pedro,Ana,Joao'.split(','))//separa em um arry qubrando onde tiver 
 const template = `ola ${nome}!`
 console.log(template)
 
-// funcao arrow
+// Função Arrow
 const up = texto => texto.toUpperCase()
 console.log(`ei... ${up('cuidado')}!`)
