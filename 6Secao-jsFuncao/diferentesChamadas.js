@@ -1,4 +1,6 @@
 // Criar função literal
+
+// Posso chamar a função antes de declara-la
 function f1(){}
 
 // armazenar em uma variavel
