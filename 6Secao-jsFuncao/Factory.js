@@ -8,7 +8,7 @@ function criarPessoa(){
 }
 
 console.log(criarPessoa())
-
+  
 function criarProd(nome, preco){
     return{
         // nome : nome,
