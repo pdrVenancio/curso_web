@@ -1,0 +1,2 @@
+// Foge do escopo global
+

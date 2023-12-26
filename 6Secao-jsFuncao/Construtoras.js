@@ -33,4 +33,5 @@ nxs.acelerar()
 nxs.acelerar()
 console.log(nxs.getVelocidadeAtual())
 
+
  

@@ -20,3 +20,17 @@ const criarPessoa = nome => {
 
 const p2 = criarPessoa('pedro')
 p2.falar()
+
+// DESAFIO FUNÇÃO CONSTRUTORA
+
+function Pessoa1(nome){
+    this.nome = nome
+    this.falar = function(){
+        console.log(`Meu nome é ${this.nome}`)
+    }
+}
+
+const p3 = new Pessoa1('Joa')
+p3.falar()
+console.log(p3.nome)
+
