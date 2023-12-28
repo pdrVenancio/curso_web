@@ -15,7 +15,7 @@ imprimirResultado(3, 4, function(x, y){
 imprimirResultado(3, 4, (x, y) => x * y) //posso passar uma arrow function anonima tbm
 
 // Dentro de um obj
-const pessoa ={
+const pessoa = {
     falar: function (){
         console.log('Obaaaaaa')
     }
