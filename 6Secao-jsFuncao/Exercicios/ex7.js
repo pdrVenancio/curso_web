@@ -6,8 +6,8 @@ function basc(a = 0, b = 0, c = 0) {
     if(del < 0 )
         console.log("Delta negativo!\n")
     else{
-        x1 = -b + Math.sqrt(del) / 2 * a
-        x2 = -b - Math.sqrt(del) / 2 * a
+        x1 = (-b + Math.sqrt(del)) / (2 * a)
+        x2 = (-b - Math.sqrt(del)) / (2 * a)
 
         console.log("X1 = " + x1 + " X2 = " +x2)
     }
