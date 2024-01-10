@@ -1,5 +1,4 @@
 // Object.preventExtension -> nao deixa criar novos atributos em um obj
-
 const produto = Object.preventExtensions({
     nome: "dasd", preco: 34, tag: 333
 })
