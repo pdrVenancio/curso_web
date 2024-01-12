@@ -1,5 +1,3 @@
-const apr = ['pedro', 'celenia', 'joao', 'jamili', 'joaqim']
-
 //                  (valor, indice, array)
 apr.forEach(function(nome, indice){
     console.log(`${indice + 1}) ${nome}`)
