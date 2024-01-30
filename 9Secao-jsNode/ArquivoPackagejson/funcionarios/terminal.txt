@@ -1,0 +1,12 @@
+Para criar um arquivo package.json usamos o comando
+NPM INIT ele fara algumas perguntas sobre o programa 
+que vc esta querendo criar.
+
+Para criar sem precisar responder as perduntas usamos 
+NPM INIT -Y 
+
+Instalando dependencias: NPM nome da dependencia 
+Instalando dependencias junto com a criação do
+package.json( vai conter a descrição de todas as 
+dependencias que esse projeto precisa) 
+NPM I --SAVE nome da dependencia
