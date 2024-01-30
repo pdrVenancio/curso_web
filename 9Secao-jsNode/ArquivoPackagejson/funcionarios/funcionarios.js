@@ -7,7 +7,11 @@ const axios = require('axios')
 axios.get(url).then(response =>{
     // response.data possui a informação de cada funcionario
     const funcionarios = response.data
-
-   
+    console.log(funcionarios)
+    
+    // Loop para ver apenas os nomes dos funcionario
+    // for(let fun of funcionarios){
+    //     console.log(fun.nome)
+    // }
 })
 
