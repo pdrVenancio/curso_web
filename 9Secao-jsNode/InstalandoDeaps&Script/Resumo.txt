@@ -1,0 +1,16 @@
+Para rodar o programa no terminal criamos em script
+
+"start" 
+"dev"
+
+start - Já é um comando padram do node entao podemos usar para rodar apenas
+
+npm start
+
+dev - É um comando que nos estamos criando(podendo ter qualquer outro nome)
+quando é assim para rodar usamos 
+
+npm run dev
+
+Assim podemos rodar de diferentes maneiras um msm arquivo apenas mudando o comando 
+no terminal
