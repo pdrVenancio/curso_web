@@ -10,7 +10,7 @@ const caminho = __dirname + '/arquivo.json'
 const conteudo = fs.readFileSync(caminho, "utf-8")
 console.log(conteudo)
 
-// Assincrono + interessante
+// Assincrono ++++ interessante
 
 // Passamos uma callback que só é chamada quando termina de ler o arquivo
 fs.readFile(caminho, "utf-8", (err, conteudo) =>{
