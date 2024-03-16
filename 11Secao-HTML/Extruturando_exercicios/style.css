@@ -1,0 +1,13 @@
+.lista {
+    list-style-type: none;
+}
+
+.lista .item .link{
+    text-decoration: none;
+    color: black;
+}
+
+#conteudo{
+    padding: 20px 0px;
+
+}
