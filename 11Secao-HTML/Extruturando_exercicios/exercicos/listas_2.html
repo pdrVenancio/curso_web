@@ -1,12 +1,10 @@
-
-
 <h1>Projetos</h1>
 <ul class="tree">
     <li>
-        backend
+        <span li-pasta>backend</span>
         <ul>
             <li>
-                app
+                <span li-pasta>app</span>
                 <ul>
                     <li>projetos.js</li>
                     <li>usuario.js</li>
@@ -14,7 +12,7 @@
                 </ul>
             </li>
             <li>
-                config
+                <span li-pasta>config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -23,10 +21,10 @@
         </ul>
     </li>
     <li>
-        frontend
+        <span li-pasta>frontend</span>
         <ul>
             <li>
-                public
+                <span li-pasta>public</span>
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -38,3 +36,17 @@
 </ul>
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<script>
+    document.querySelectorAll('[li-pasta]').forEach(folder => {
+        folder.onclick = function(e){
+            //Pega o proximo elemento( elemento filho de li-pasta)
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+
+
+</script>
