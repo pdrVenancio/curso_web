@@ -1,13 +1,32 @@
-.lista {
-    list-style-type: none;
+body{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat';
 }
 
-.lista .item .link{
+.nav-aulas{
+    width: 20%;
+    height: 100vh;
+    background-color: #121212;
+}
+.nav-aulas header h1{
+    color: #fff;
+    margin-left: 20px;
+}
+.nav-aulas .lista {
+    list-style-type: none;
+}
+.nav-aulas .lista .item{
+    padding: 5px ;
+}
+
+.nav-aulas .lista .item .link{
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 #conteudo{
-    padding: 20px 0px;
-
+    padding: 20px;
+    width: 80%;
 }
