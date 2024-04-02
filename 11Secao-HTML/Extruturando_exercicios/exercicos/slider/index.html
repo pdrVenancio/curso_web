@@ -1,0 +1,55 @@
+<div wm-slider>
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro da cidade" title="Muro da cidade por Taso Bessa">
+    </p>
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Gif coder">
+    </p>
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="RJ" height="342" >
+    </p>
+</div>
+<style>
+    p {
+        position: absolute; /* Define a posição absoluta para os parágrafos */
+        display: none; /* Oculta os parágrafos */
+    }
+</style>
+
+<script>
+    // Definindo a função mover fora da função aninhada
+    function mover(elem, ini, fim , passo, callback){
+        const novoIni = ini - passo // Calcula a nova posição inicial subtraindo o passo
+        if(novoIni >= fim) { // Verifica se a nova posição inicial é maior ou igual à posição final
+            elem.style.left = novoIni + 'px'; // Define a nova posição left do elemento
+            setTimeout(() => mover(elem, novoIni, fim , passo, callback), 7); // Chama recursivamente a função mover com um pequeno atraso
+        } else {
+            callback(); // Chama a função de retorno de chamada quando a animação estiver completa
+        }
+    }
+
+    function slider(){
+        const elementos = document.querySelectorAll('[wm-slider] > p'); // Seleciona todos os elementos <p> dentro do elemento com atributo wm-slider
+        const slides = Array.from(elementos); // Converte o NodeList para um array
+        exibirSlide(slides, slides[0]); // Exibe o primeiro slide
+    }
+
+    function exibirSlide(slides, slide){
+        slide.style.display = 'block'; // Exibe o slide
+        const inicio = innerWidth; // Define a posição inicial do slide à direita da tela
+        const fim = -slide.clientWidth; // Define a posição final do slide à esquerda da tela
+
+        slide.style.left = `${inicio}px`; // Define a posição left inicial do slide
+        
+        mover(slide, inicio, fim, 5, () =>{ // Chama a função mover para animar o slide
+            exibirSlide(slides, getProximo(slides, slide)); // Exibe o próximo slide após a animação ser concluída
+        });
+    }
+
+    function getProximo(lista, atual){
+        const i = lista.indexOf(atual) + 1; // Obtém o índice do slide atual
+        return i < lista.length ? lista[i] : lista[0]; // Retorna o próximo slide na lista, ou o primeiro slide se for o último
+    }
+
+    slider(); // Inicia o slider
+</script>

@@ -6,6 +6,7 @@ body{
 }
 
 .nav-aulas{
+    position: fixed;
     width: 20%;
     height: 100vh;
     background-color: #121212;
@@ -29,4 +30,5 @@ body{
 #conteudo{
     padding: 20px;
     width: 80%;
+    margin-left: 20%;
 }
