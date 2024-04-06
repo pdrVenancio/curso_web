@@ -3,7 +3,7 @@
 
 </video>
 
-<div wm-progressso="meu-video" class="progresso">
+<div wm-progresso="meu-video" class="progresso">
     <div></div>
 </div>
 
@@ -39,11 +39,11 @@
         document.querySelector(`button[wm-pause=${id}]`).onclick = e => video.pause()
 
         setInterval(() => {
-            const percentual = (video.correntTime / videoDuration) * 100
+            const percentual = (video.currentTime / video.duration) * 100
             const valorDiv = document.querySelector(`[wm-progresso=${id}] > div`)
             valorDiv.style.width = `${percentual}%`
             valorDiv.innerHTML = `${percentual.toFixed(1)}%`
-        })
+        }, 500)
 
     }
     configurarVideo('meu-video')
